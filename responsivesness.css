@@ -1,0 +1,306 @@
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .info-grid,
+    .awards-grid,
+    .facilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .environment-showcase,
+    .building-showcase,
+    .impression-showcase,
+    .about-content,
+    .location-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .environment-showcase {
+        display: flex;
+        max-width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+       
+    }
+    
+    .building-showcase {
+        display: flex;
+        margin-left: auto;
+        max-width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+       
+    }
+    
+    
+    .impression-showcase {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 60px;
+        max-width: 100%;
+    
+    }
+
+    .showcase-content p {
+        max-width: 100%;
+        line-height: 1.8;
+        color: var(--extra-color);
+    }
+    
+    .showcase-img,
+    .about-image img {
+        height: auto;
+        width: 100%;
+    }
+
+
+    
+    .top-nav {
+        padding: 15px;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .hero-content p {
+        font-size: 20px;
+    }
+    
+    .section-title {
+        font-size: 30px;
+    }
+    
+    .certificate-info h4 {
+        font-size: 18px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-items {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: var(--white);
+        flex-direction: column;
+        padding: 40px 20px;
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+    
+    .nav-items.active {
+        left: 0;
+    }
+    
+    .nav-items li {
+        margin-bottom: 20px;
+    }
+    
+    .nav-items a {
+        color: var(--text-color);
+        font-size: 18px;
+    }
+    
+    .main-header {
+        background-image: url('./images/building.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 80vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+    }
+    
+    .sub-hero-content h1 {
+        font-size: 28px;
+    }
+    
+    .info-grid,
+    .awards-grid,
+    .facilities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .showcase-img,
+    .service-img,
+    .about-image img {
+        height: 250px;
+    }
+    
+    .section-title {
+        font-size: 26px;
+    }
+    
+    .section-desc {
+        font-size: 14px;
+        max-width: 90%;
+    }
+    
+    .awards-desc {
+        font-size: 16px;
+    }
+    
+    .showcase-content h3,
+    .service-content h3 {
+        font-size: 20px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-logo h3 {
+        font-size: 20px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 24px;
+    }
+    
+    .hero-content p {
+        font-size: 14px;
+    }
+    
+    .btn-main {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+    
+    .info-item {
+        padding: 20px;
+    }
+    
+    .info-item h3 {
+        font-size: 20px;
+    }
+    
+    .info-item p {
+        font-size: 16px;
+    }
+    
+    .award-certificate {
+        flex-direction: column;
+    }
+    
+    .section-bg {
+        font-size: 100px;
+    }
+    
+    .contact-item i {
+        font-size: 20px;
+    }
+    
+    .building-info,
+    .awards-section,
+    .core-value-section,
+    .service-section,
+    .about-section,
+    .location-section,
+    .facilities-section,
+    .contact-section {
+        padding: 50px 0;
+    }
+    
+    .form-group input,
+    .form-group textarea,
+    .btn-submit {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* For mobile version - right side mobile design */
+@media (max-width: 480px) {
+    /* Mobile specific styles to match the design shown in the right side of image 1 */
+    .main-header {
+        background-image: url('./images/building.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .top-nav {
+        padding: 10px 15px;
+    }
+    
+    .hero-content {
+        padding: 0 15px;
+        text-align: left;
+        align-items: flex-start;
+    }
+    
+    .hero-content h1 {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    
+    .hero-content p {
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+    
+    .btn-main {
+        padding: 8px 25px;
+        border-radius: 5px;
+    }
+    
+    /* Mobile info boxes */
+    .info-item {
+        border-radius: 5px;
+        padding: 15px;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        margin-bottom: 15px;
+    }
+    
+    /* For the list of specs on mobile */
+    .mobile-specs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .mobile-spec-item {
+        padding: 15px;
+        background-color: var(--bg-light);
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .mobile-spec-item span:first-child {
+        font-weight: 500;
+    }
+    
+    .mobile-spec-item span:last-child {
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+}
